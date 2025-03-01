@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
 import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, SlidersHorizontal, User } from "lucide-react";
@@ -71,7 +71,7 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}>
 
-        <img className="w-16"src="EGSTOCK-Logo1.png"></img>
+        <Image className="w-16"src="EGSTOCK-Logo1.png"></Image>
         <h1 
           className={`${
             isSidebarCollapsed ? "hidden" : "block"

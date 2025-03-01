@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
 import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
@@ -67,7 +67,7 @@ const Navbar = () => {
             </div>
             <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
             <div className="flex items-center gap-3 cursor-pointer">
-                <img className="w-9 h-9" src="./EmanueleG.jpeg"></img>
+                <Image className="w-9 h-9" src="./EmanueleG.jpeg"></Image>
                 <span className="font-semibold">Emanuele Garzelli</span>
             </div>
         </div>
