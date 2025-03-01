@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function comingsoon() {
+export default function ComingSoon() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 

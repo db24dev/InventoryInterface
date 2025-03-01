@@ -26,6 +26,7 @@ const CardSalesSummary = () => {
     }, 0) || 0;
 
   const highestValueData = salesData.reduce((acc, curr) => {
+    //@ts-expect-error please ignore
     return acc.totalValue > curr.totalValue ? acc : curr;
   }, salesData[0] || {});
 

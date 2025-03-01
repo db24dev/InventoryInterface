@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import logo from "./STOCKEFY.jpg"
 export default function LandingPage() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
