@@ -61,6 +61,7 @@ export const makeStore = () => {
   return configureStore({
     reducer: persistedReducer,
     middleware: (getDefaultMiddleware) =>
+      //@ts-expect-error please ignore
       getDefaultMiddleware({
         serializableCheck: {
           ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
