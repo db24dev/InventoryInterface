@@ -29,8 +29,9 @@ const CardSalesSummary = () => {
     //@ts-expect-error please ignore
     return acc.totalValue > curr.totalValue ? acc : curr;
   }, salesData[0] || {});
-
+   //@ts-expect-error please ignore
   const highestValueDate = highestValueData.date
+  //@ts-expect-error please ignore
     ? new Date(highestValueData.date).toLocaleDateString("en-US", {
         month: "numeric",
         day: "numeric",
