@@ -79,7 +79,7 @@ const Products = () => {
               className="border shadow rounded-md p-4 max-w-full w-full mx-auto"
             >
               <div className="flex flex-col items-center">
-                <Image/>
+                <Image alt="product"/>
                 <h3 className="text-lg text-gray-900 font-semibold">
                   {product.name}
                 </h3>
