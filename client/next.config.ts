@@ -1,6 +1,17 @@
 import type { NextConfig } from "next";
+import { hostname } from "os";
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+      protocol: "https",
+      hostname: "s3-inventoryinterface.s3.us-west-1.amazonaws.com",
+      port: "",
+      pathname: "/**"
+      }
+    ]
+  },
   /* config options here */
     trailingSlash: true,
     output: 'standalone',
